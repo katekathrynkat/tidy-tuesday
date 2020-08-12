@@ -84,8 +84,8 @@ fig <- ggplot() +
            color=c('red','grey20','blue'),
            size=4, family='Slayer', fontface='bold', angle=90) +
   annotate('text', x=30.5, y=-39,
-           label='each point represents the average sentiment score of aangs dialogue\nper chapter, fitted with a linear model. valence ratings\nare from the AFINN sentiment lexicon.',
-           color='grey20', size=3.5, family='Slayer', fontface='italic') +
+           label='points represent the average sentiment score of aangs dialogue per\nchapter, fitted with a linear model. data from the {appa} package\nby avery robbins. valence ratings from the AFINN sentiment lexicon.',
+           color='grey20', size=3.2, family='Slayer', fontface='italic') +
   coord_cartesian(clip='off')
 
 ggsave('figs/aangst.png', fig, width=9, height=6, units='in')
